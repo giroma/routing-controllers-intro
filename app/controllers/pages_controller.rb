@@ -8,7 +8,8 @@ class PagesController < ApplicationController
 
   end
   def contest
-
+    flash[:notice] = 'No more contest'
+    redirect_to '/welcome'
   end
   def kitten
 
